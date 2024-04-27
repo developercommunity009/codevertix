@@ -43,8 +43,7 @@ app.post('/send-email', (req, res) => {
     // Email options
     const mailOptions = {
         from: 'zahranisoft8@gmail.com',
-        to: 'zahranisoft8@gmail.com',
-        // to: 'Hr@codevertix.com',
+        to: 'Hr@codevertix.com',
         subject: `CODEVERIX User ${name}  `,
         text: `User Name: ${name}\nUser Email: ${email}\nUser Message: ${message}`
     };
