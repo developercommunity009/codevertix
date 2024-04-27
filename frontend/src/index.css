@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+.gray-gradient{
+    background-color: white;
+}
+
+
+@tailwind base;
+
+
+@tailwind components;
+@tailwind utilities;
+
+ 
+    /* Chrome, Safari and Opera */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+
+.animate{
+    transition: transform 0.3s ease;
+}
+
+.btn {
+    transition-duration: 300ms;
+    background-image: linear-gradient(to right, #355F98, #2CADA3);
+    font-family: 'Inter', sans-serif; 
+    font-weight: 600;
+    color: #FAFAFA;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 5px;
+  }
+
+ 
+
+  @keyframes floatUpDown {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-5px);
+    }
+  }
+  
+  .floating-image {
+    animation: floatUpDown 3s ease-in-out infinite;
+  }
+
+  .error{
+    color: red;
+    font-size: 12px;
+    margin: 5px 0 0 5px ;
+  }
+  
+  
+
+
+  
+
+
