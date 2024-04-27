@@ -34,6 +34,9 @@ const transporter = nodemailer.createTransport({
     }
 });
 
+app.post('/send-email', (req, res) => {
+res.send("Hello CodeVertix")
+});
 
 
 // Route to send email
