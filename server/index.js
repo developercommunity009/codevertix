@@ -40,7 +40,7 @@ res.send("Hello CodeVertix")
 
 // Route to send email
 // Route to handle form submission and send email
-app.post('/send-email', (req, res) => {
+app.get('/send-email', (req, res) => {
   res.send("Send mail")
     // const { name, email, message } = req.body;
     // // Email options
