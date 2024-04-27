@@ -32,7 +32,6 @@ const Csection8 = () => {
     validationSchema: messageSechmema,
     onSubmit: (values , {resetForm}) => {
       console.log(values)
-    
 
       axios.post(`https://codevertix-ruby.vercel.app/send-email`, values)
       .then(response => {
