@@ -34,7 +34,7 @@ const Csection8 = () => {
       console.log(values)
     
 
-      axios.post(`http://localhost:8080/send-email`, values)
+      axios.post(`https://codevertix-ruby.vercel.app/send-email`, values)
       .then(response => {
         console.log('Email sent successfully:', response.data);
         setIsSubmitted(true)
