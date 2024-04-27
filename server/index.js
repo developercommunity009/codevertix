@@ -18,12 +18,11 @@ const PORT = process.env.PORT;
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.use(cors());
-// app.use(cors({
-//   origin: `https://codevertix.com/`,
-// methods: ['GET', 'POST'],
-//   credentials: true,
-// }));
+app.use(cors({
+  origin: `https://codevertix-hk7v.vercel.app/`,
+methods: ['GET', 'POST'],
+  credentials: true,
+}));
 
 // Nodemailer transporter configuration
 const transporter = nodemailer.createTransport({
