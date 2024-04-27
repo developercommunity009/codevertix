@@ -34,7 +34,7 @@ const transporter = nodemailer.createTransport({
     }
 });
 
-app.get('/send-email', (req, res) => {
+app.get('/', (req, res) => {
 res.send("Hello CodeVertix")
 });
 
