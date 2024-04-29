@@ -19,7 +19,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(cors({
-  origin: `http://www.codevertix.com/`,
+  origin: `https://www.codevertix.com/`,
 methods: ['GET', 'POST'],
   credentials: true,
 }));
